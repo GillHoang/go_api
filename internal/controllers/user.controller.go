@@ -18,9 +18,5 @@ func NewUserController() *UserController {
 
 func (uc *UserController) GetUser(c *gin.Context) {
 	uid := c.Param("id")
-	c.JSON(200, responses.ResponseData{
-		Code: 200,
-		Message: "Success",
-		Data: uc.userService.GetUserByID(uid),
-	})
+	responses.SuccessResponse(c, 20001, uc.userService.GetUserByID(uid))
 }
