@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"github.com/gillhoang/go_api/internal/services"
+	"github.com/gillhoang/go_api/pkg/responses"
 	"github.com/gin-gonic/gin"
 )
 
@@ -17,8 +18,9 @@ func NewUserController() *UserController {
 
 func (uc *UserController) GetUser(c *gin.Context) {
 	uid := c.Param("id")
-	c.JSON(200, gin.H{
-		"id":   uid,
-		"name": uc.userService.GetUserByID(uid),
+	c.JSON(200, responses.ResponseData{
+		Code: 200,
+		Message: "Success",
+		Data: uc.userService.GetUserByID(uid),
 	})
 }

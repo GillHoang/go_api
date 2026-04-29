@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/gillhoang/hoc_api/internal/routers"
+	"github.com/gillhoang/go_api/internal/routers"
 )
 
 func main() {
