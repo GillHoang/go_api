@@ -1,6 +1,6 @@
 package services
 
-import "github.com/gillhoang/hoc_api/internal/repos"
+import "github.com/gillhoang/go_api/internal/repos"
 
 type UserService struct {
 	userRepo *repos.UserRepo

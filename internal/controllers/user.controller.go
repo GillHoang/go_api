@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/gillhoang/hoc_api/internal/services"
+	"github.com/gillhoang/go_api/internal/services"
 	"github.com/gin-gonic/gin"
 )
 

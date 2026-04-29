@@ -1,4 +1,4 @@
-module github.com/gillhoang/hoc_api
+module github.com/gillhoang/go_api
 
 go 1.26.2
 

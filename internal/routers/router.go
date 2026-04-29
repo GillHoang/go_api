@@ -1,7 +1,7 @@
 package routers
 
 import (
-	c "github.com/gillhoang/hoc_api/internal/controllers"
+	c "github.com/gillhoang/go_api/internal/controllers"
 	"github.com/gin-gonic/gin"
 )
 
